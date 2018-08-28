@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llHelp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:visibility="visible"
+        android:id="@+id/llHelp1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/help1"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:text="Filter your list of records using full or partial name of the visitor or the date / month of the visit or their mobile numbers or name of your residential society"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:padding="@dimen/_10sdp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtSkip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:text="Skip"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtNext1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:text="Next"
+                android:layout_marginLeft="@dimen/_15sdp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:visibility="gone"
+        android:id="@+id/llHelp2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/help2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:text="Click here to change your personal settings"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtSkip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:text="Skip"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtNext2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:text="Next"
+                android:layout_marginLeft="@dimen/_15sdp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:visibility="gone"
+        android:id="@+id/llHelp3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/help3"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:text="Icon has a different colour when records belong to different residential societies"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_80sdp"
+            android:padding="@dimen/_10sdp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtSkip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:text="Skip"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtNext3"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:text="Next"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:visibility="gone"
+        android:id="@+id/llHelp4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/help4"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:text="This indicates that your visitor has left"
+            android:layout_marginTop="@dimen/_250sdp"
+            android:layout_marginRight="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtSkip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:text="Skip"
+                tools:ignore="HardcodedText"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtNext4"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:text="Got it"
+                android:layout_marginLeft="@dimen/_15sdp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

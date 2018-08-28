@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.User.GetVisitorActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/llImage"
+        layout="@layout/common_header"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/llStep"
+        android:layout_below="@+id/llImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/toolbar_background"
+        android:gravity="center"
+        android:paddingTop="@dimen/_5sdp"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/llHome"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            tools:ignore="RtlHardcoded">
+
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/home"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/walking"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Check Out"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_10sdp"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Confirm"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llStep">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search using mobile"
+            android:imeOptions="actionSearch"
+            android:inputType="number"
+            android:maxLength="10"
+            app:met_baseColor="@color/colorAccent"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_textColor="@color/black"
+            app:met_textColorHint="@color/gray"
+            app:met_underlineColor="@color/black"
+            android:layout_margin="@dimen/_10sdp"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/button_background"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:layout_alignParentBottom="true"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:visibility="gone">
+
+        <ProgressBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar_background"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

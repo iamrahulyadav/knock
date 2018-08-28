@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgProfile"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@color/colorPrimaryDark" />
+
+                            <ImageView
+                                android:id="@+id/imgDone"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="bottom|right"
+                                android:src="@drawable/done"
+                                android:visibility="gone"
+                                tools:ignore="ContentDescription,RtlHardcoded" />
+                        </FrameLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/txtMessege"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/confirm"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgBackGround"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/back_image_4" />
+
+                            <TextView
+                                android:id="@+id/txtId"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="150"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp"
+                                tools:ignore="HardcodedText" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        tools:ignore="RtlHardcoded">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="@dimen/_55sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name"
+                                    android:textColor="@color/darkGray"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/txtName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:text="Krunal Nizama"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="@dimen/_55sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mobile"
+                                    android:textColor="@color/darkGray"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="HardcodedText" />
+
+
+                                <TextView
+                                    android:id="@+id/txtMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:text="7405283868"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="@dimen/_55sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="From"
+                                    android:textColor="@color/darkGray"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/txtComingFrom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:text="Shivranjani , Ahmedab , Gujarat"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:singleLine="true"
+                                    android:scrollHorizontally="true"
+                                    android:ellipsize="marquee"
+                                    android:marqueeRepeatLimit ="marquee_forever"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="@dimen/_55sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Purpose"
+                                    android:textColor="@color/darkGray"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="HardcodedText" />
+
+
+                                <TextView
+                                    android:id="@+id/txtPurpose"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:text="Official"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtRegisterOrVisit"
+                                    android:layout_width="@dimen/_55sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Visited On"
+                                    android:textColor="@color/darkGray"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="HardcodedText" />
+
+
+                                <TextView
+                                    android:id="@+id/txtRegisterOn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:text="03-Apr-2018 15:30"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llLeft"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="@dimen/_55sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Left On"
+                                    android:textColor="@color/darkGray"
+                                    android:textSize="@dimen/_13sdp"
+                                    tools:ignore="HardcodedText" />
+
+
+                                <TextView
+                                    android:id="@+id/txtLeftOn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:text="03-Apr-2018 15:30"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="UselessLeaf" />
+
+                    <Button
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_background"
+                        android:text="Confirm"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

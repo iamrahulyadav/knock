@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.proclivis.smartknock">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.User.UserMainActivity"/>
+        <activity android:name=".Activity.User.VisitorDetailActivity" />
+        <activity android:name=".Activity.User.ToMeetActivity" />
+        <activity android:name=".Activity.User.ReviewActivity" />
+        <activity android:name=".Activity.User.SettingUserActivity" />
+        <activity android:name=".Activity.User.GetVisitorActivity" />
+        <activity android:name=".Activity.User.VisitorVerifyActivity" />
+        <activity android:name=".Activity.Member.MemberMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.Member.SettingMemberActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.Member.MemberPagerActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:enabled="true" android:name=".Service.UploadService" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_logo_k_test" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_logo_k_test" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <activity android:name=".Activity.OtpActivity" />
+        <activity android:name=".Activity.User.VisitorVerifyDoneActivity" />
+        <activity android:name=".Activity.User.ExpressInActivity" />
+        <activity android:name=".Activity.User.ExpressConfirmActivity" />
+        <activity android:name=".Activity.OtpExitActivity" />
+        <activity android:name=".Activity.CameraActivity" />
+        <activity android:name=".Activity.User.WaitingActivity" />
+        <activity android:name=".Activity.User.WaitingDetailActivity"></activity>
+    </application>
+
+</manifest>

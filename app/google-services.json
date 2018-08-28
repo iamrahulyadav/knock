@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "59136762068",
+    "firebase_url": "https://knock-knock-1c1dd.firebaseio.com",
+    "project_id": "knock-knock-1c1dd",
+    "storage_bucket": "knock-knock-1c1dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59136762068:android:c9a9d5fe8e41ef89",
+        "android_client_info": {
+          "package_name": "com.proclivis.smartknock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59136762068-gaqb06is9318cf7lcud5jntkqnj571oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proclivis.smartknock",
+            "certificate_hash": "bd21fa1a15ae2db12c3e5ed13762b97f6e4871c6"
+          }
+        },
+        {
+          "client_id": "59136762068-7tj3gtfr0tbp288o84aro7djm6ohs3rg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "59136762068-7tj3gtfr0tbp288o84aro7djm6ohs3rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMBHRsoXea2GKBGC2c7S25SB-MFVuijJg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59136762068-7tj3gtfr0tbp288o84aro7djm6ohs3rg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59136762068:android:8c86425bac660ebb",
+        "android_client_info": {
+          "package_name": "com.vms.knockknock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59136762068-9drnam13cfj3ul649398g7qudq5fv86o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vms.knockknock",
+            "certificate_hash": "bd21fa1a15ae2db12c3e5ed13762b97f6e4871c6"
+          }
+        },
+        {
+          "client_id": "59136762068-7tj3gtfr0tbp288o84aro7djm6ohs3rg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "59136762068-7tj3gtfr0tbp288o84aro7djm6ohs3rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMBHRsoXea2GKBGC2c7S25SB-MFVuijJg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59136762068-7tj3gtfr0tbp288o84aro7djm6ohs3rg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

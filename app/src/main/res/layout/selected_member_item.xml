@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/edittext_background_gray"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saurav Ganguly"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:maxLines="1"
+        tools:ignore="HardcodedText" />
+    <!--android:maxLines="1"
+    android:marqueeRepeatLimit="marquee_forever"-->
+    <ImageView
+        android:id="@+id/imgCancel"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:background="@drawable/cancel"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

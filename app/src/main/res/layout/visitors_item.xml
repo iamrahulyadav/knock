@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+
+    <TextView
+        android:id="@+id/txtDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/llResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Default Response"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:id="@+id/rdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <RadioButton
+                    android:id="@+id/rbAlwaysAsk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Always Ask"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rbAlwaysAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Always Accept"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rbAlwaysReject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Always Reject"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

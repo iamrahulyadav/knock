@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <item
+        android:id="@+id/editFilter"
+        android:icon="@drawable/ic_action_filter"
+        android:title="Home"
+        app:showAsAction="always"/>-->
+
+    <item
+        android:id="@+id/editProfile"
+        android:icon="@drawable/ic_action_profile"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+</menu>

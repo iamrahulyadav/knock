@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Smart Knock</string>
+
+    <string name="confirm"><u>Please confirm your visit...</u>.</string>
+    <string name="thanku"><u>Thank you for your visit...</u>.</string>
+
+    <string-array name="steps">
+        <item>Beginning</item>
+        <item>Visitor Detail</item>
+        <item>To Meet</item>
+        <item>Review</item>
+    </string-array>
+
+    <string name="login_again">Please login again</string>
+
+    <string name="offline_success">Visitor added successfully. Please use the same device to record your Checkout as we see instabilities with the Internet Connection. Sorry for the inconvenience</string>
+
+    <string name="clickHere"><u>Click here for a demo</u></string>
+
+    <string name="REASON1">I am currently not at home</string>
+    <string name="REASON2">I am busy. Please come later</string>
+    <string name="REASON3">Please deliver parcel to security</string>
+    <string name="REASON4">Type your own message</string>
+</resources>

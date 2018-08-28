@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_10sdp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/ic_logo"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/logo"
+                        tools:ignore="ContentDescription" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edtUserMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        app:met_baseColor="@color/colorAccent"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="@color/colorAccent"
+                        app:met_textColor="@color/black"
+                        app:met_textColorHint="@color/gray"
+                        app:met_underlineColor="@color/black"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/button_background"
+                        android:text="Login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By clicking login you are agreeing to the Terms and Conditions"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightGray"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not yet Registered, "
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/lightGray"
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/txtClickhere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clickHere"
+                        android:textStyle="italic|bold"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/lightGray"
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar_background"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
